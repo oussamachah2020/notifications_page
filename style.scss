@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+$NewNotifBackground: hsla(211, 68%, 94%, 0.665);
+$linksColor: hsl(219, 85%, 26%);
+$usernameColor: hsl(0, 100%, 0);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  font-size: 16px;
+}
+
+.notifications-header {
+  margin: 2.5rem 1rem;
+}
+
+.notifications-header,
+.notifications-header__counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notifications-header__readed {
+  background: none;
+  border: none;
+  font-weight: 500;
+  letter-spacing: 0.125rem;
+  color: hsla(0, 0%, 0%, 0.289);
+  cursor: pointer;
+}
+
+.notifications-header__title {
+  font-weight: 800;
+}
+
+.notifications-header__counterValue {
+  background-color: $linksColor;
+  color: hsl(0, 0, 100%);
+  position: relative;
+  left: 5.5%;
+  padding: 0.2rem 0.625rem;
+  border-radius: 10px;
+  font-weight: 800;
+}
+
+.notifications-container {
+  display: grid;
+  justify-content: start;
+  align-items: start;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.25rem;
+  margin: 0 1rem;
+}
+
+.notifications-container__content {
+  background: $NewNotifBackground;
+  padding: 30px 10px 30px 10px;
+  display: flex;
+  border-radius: 10px;
+}
+
+.notifications-container__content > img {
+  width: min(45px);
+  height: min(45px);
+  margin-right: 1rem;
+}
+
+.username {
+  font-weight: 800;
+}
+
+.special-occassion {
+  color: hsl(219, 14%, 63%);
+  font-weight: 800;
+}
+
+.notification-timer {
+  opacity: 0.5;
+  margin-top: 0.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: $linksColor;
+  font-weight: 800;
+}
+
+.alert-point {
+  position: relative;
+  left: 5px;
+}
+
+.active-notification {
+  margin-top: 2.5rem;
+  padding: 15px;
+}
+
+.inactive {
+  background: none;
+}
+
+.hide {
+  transform: translateX(-100%);
+}
+
+.message-container {
+  border: 1px solid #00000041;
+  border-radius: 10px;
+  padding: 1.5rem;
+  color: hsl(219, 12%, 42%);
+  margin-top: 1rem;
+}
+
+#commented_pic {
+  margin-left: 1rem;
+}
